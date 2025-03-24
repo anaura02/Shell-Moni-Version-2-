@@ -1,0 +1,212 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shell Moni</title>
+
+    <!-- Google Fonts Montserrat & Boldonse -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS and Bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home-page"><img src="{% static 'assets/img/logo.png' %}" alt="shell moni logo" width="50" height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home-page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                      </svg></button>                
+                </form>
+                <a href="{% url 'login' %}" class="btn btn-outline-success ms-2">Log In</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home-page" class="d-flex justify-content-start align-items-center" style="height: 100vh;">    
+      <div class="container mt-5">
+          <div class="row">
+              <div class="col-6 ms-5"> 
+                  <h1 class="hero-title mt-5">
+                      Safe & <br>
+                      <span class="hero-text">Secure Banking</span>
+                  </h1>
+
+                  <a href="#" type="button" class="btn hero-btn mt-4">Tell me More!</a>
+
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="our-services" class="mt-5 pt-5">
+       
+        <div class="container marketing">
+
+            <h2 class="header-title text-center mb-5 pb-4">
+                Our Services
+            </h2>
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row text-center web-text">
+              <div class="col-lg-4">
+                <img src= "{% static './assets/img/Business Icon.png' %}" alt="Business Icon" width="140" height="140">
+                
+                <h2 class="fw-normal py-3">Buiness Loans</h2>
+                <p>
+                    Unlock the power of your business with our comprehensive, low-interest loans designed to fuel your growth. 
+                    Empower your business today with a loan that works for you!
+                </p>
+
+                <p><a class="btn general-btn mt-3" href="#">Find out More »</a></p>
+              </div><!-- /.col-lg-4 -->
+
+              
+              <div class="col-lg-4">
+                <img src="{% static './assets/img/Loan Icon.png' %}" alt="Loan Icon" width="140" height="140">
+                
+                <h2 class="fw-normal py-3">Low-Interest Loans</h2>
+                <p>
+                    Take control of your future with a loan that's tailored for everyone—easy to qualify for, simple to manage, and designed to fit your budget.
+                </p>
+
+                <p><a class="btn general-btn mt-3" href="#">Find out More »</a></p>
+              </div><!-- /.col-lg-4 -->
+
+
+              <div class="col-lg-4">
+                <img src="{% static './assets/img/Personal Account Icon.png' %}" alt="Insurance Icon" width="140" height="140">
+                
+                <h2 class="fw-normal py-3">Reliable Insurance</h2>
+                <p>
+                    Protect what matters most with our comprehensive insurance plans. Whether it's your home, car, health, or business, we offer reliable coverage that gives you peace of mind in uncertain times.
+                </p>
+
+                <p><a class="btn general-btn mt-3" href="#">Find out More »</a></p>
+              </div><!-- /.col-lg-4 -->
+
+            </div><!-- /.row -->
+        
+        
+            <!-- START THE FEATURETTES -->
+        
+        
+            <hr class="featurette-divider my-5">
+        
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1 mb-4">Connecting PNG <span class="feature-title">One Step at a Time</span></h2>
+                <p class="web-text">Transforming the banking industry by making it digital. Making it inclusive for everyone to access, whether you are in the bustling city or the beautiful rural areas.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>-->
+                <img src="{% static './assets/img/png-children.jpg' %}" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="PNG children smiling" width="500" height="500">
+            </div>
+            </div>
+        
+            <hr class="featurette-divider">
+        
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1 mb-4">And lastly, this one. <span class="feature-title">No More Long Queues</span></h2>
+                <p class="lead">
+                    Say goodbye to lengthy waiting times and say hello to quick and fast banking. All it takes is a click of a button to sign up with us and to aquire our services. 
+                </p>
+              </div>
+              <div class="col-md-5">
+                <img src="{% static './assets/img/highlands.jpg' %}" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="Highlands province" width="500" height="500">
+              </div>
+            </div>
+        
+            <hr class="featurette-divider">
+        
+            <!-- /END THE FEATURETTES -->
+        
+        </div>
+        
+        
+
+    </section>
+
+
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+          <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <p class="text-body-secondary">© 2024</p>
+          </div>
+      
+          <div class="col mb-3">
+      
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

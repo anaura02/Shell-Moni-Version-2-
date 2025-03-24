@@ -1,0 +1,85 @@
+/* Hero Section */
+
+#home-page {
+    height: 100vh;
+    background-image: url(../assets/img/hero-page-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-title {
+    color: white;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+
+
+.hero-text {
+    display: block;  /* Ensure it behaves like a block element */
+}
+
+.hero-btn{
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-weight: Bold;
+    background-color: #47EB8E;
+}
+
+.hero-btn:hover {
+    background-color: white;
+    border-color: white;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: #47EB8E;
+}
+
+/* Header & Text for Website */
+
+.header-title {
+    font-size: 3rem;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.web-text {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Buttons */
+
+.general-btn {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-weight: Bold;
+    background-color: #47EB8E;
+}
+
+.general-btn:hover {
+    background-color: #F9EEFC;
+    border-color: #F9EEFC;
+}
+
+
+/* Features text */
+
+.feature-title {
+    font-size: 25px;
+    font-family: "Boldonse", system-ui;
+
+}
+
+
+.gradient-custom-2{
+    background-image: linear-gradient(to right top, #47eb8e, #00d7c7, #00bcff, #0098ff, #1f62ff);
+}
