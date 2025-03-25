@@ -22,4 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'), 
     path('login/', views.login, name='login'),  # for login.html
+    path('login-view/', views.login_view, name='log-view'),
+    path('dashboard/', views.dashboard_view, name='dashboard'),  # Placeholder for the next view
+    
 ]
